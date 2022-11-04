@@ -6,6 +6,7 @@ import (
 
 type Client struct {
 	transport transport.Transport
+	addr      string
 }
 
 func NewClient(addr, proxy string) (*Client, error) {
